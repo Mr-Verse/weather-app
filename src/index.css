@@ -1,13 +1,31 @@
 @keyframes floating {
-    0% {
-        transform: translateX(-2px);
-    }
+  0% {
+    transform: translateX(-2px);
+  }
 
-    100% {
-        transform: translateX(2px)
-    }
+  100% {
+    transform: translateX(2px);
+  }
 }
 
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
 /* *, *::after, *::before {
     border: 1px solid red !important;
